@@ -9,7 +9,7 @@ if __name__ == "__main__":
     os.system("clear")
     print("""\033[32m
     ###############################################################################
-    # HER ÞEY TAMAM! SADECE "python slophis.py" diyerek tool'u çalýþtýrabilirsiniz! #
+    # HER ÞEY TAMAM! SADECE "python phish.py" diyerek tool'u çalýþtýrabilirsiniz! #
     ###############################################################################
     """)
     
