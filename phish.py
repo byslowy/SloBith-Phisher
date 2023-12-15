@@ -13,14 +13,14 @@ def loading_animation():
         time.sleep(0.2)
 
 print("""
- _______  ___      _______  _______  ___   _______    _______  __   __  ___   _______ 
-|       ||   |    |       ||  _    ||   | |       |  |       ||  | |  ||   | |       |
-|  _____||   |    |   _   || |_|   ||   | |_     _|  |    _  ||  |_|  ||   | |  _____|
-| |_____ |   |    |  | |  ||       ||   |   |   |    |   |_| ||       ||   | | |_____ 
-|_____  ||   |___ |  |_|  ||  _   | |   |   |   |    |    ___||       ||   | |_____  |
- _____| ||       ||       || |_|   ||   |   |   |    |   |    |   _   ||   |  _____| |
-|_______||_______||_______||_______||___|   |___|    |___|    |__| |__||___| |_______|
-""")
+             _______  ___      _______  _______  ___   _______    _______  __   __  ___   _______ 
+            |       ||   |    |       ||  _    ||   | |       |  |       ||  | |  ||   | |       |
+            |  _____||   |    |   _   || |_|   ||   | |_     _|  |    _  ||  |_|  ||   | |  _____|
+            | |_____ |   |    |  | |  ||       ||   |   |   |    |   |_| ||       ||   | | |_____ 
+            |_____  ||   |___ |  |_|  ||  _   | |   |   |   |    |    ___||       ||   | |_____  |
+             _____| ||       ||       || |_|   ||   |   |   |    |   |    |   _   ||   |  _____| |
+            |_______||_______||_______||_______||___|   |___|    |___|    |__| |__||___| |_______|
+            """)
 
 print("""
 1--->Instagram
@@ -31,14 +31,14 @@ print("MORE is COMING SOON...")
 seçim = input("Seçiminiz--->")
 
 if seçim == "0":
-    print("Exited")
+    print("Çıkış Yapıldı")
 else:
     if seçim == "1":
         # Kullanıcıdan mail al
         mail = input("Mail Adresiniz--->")
 
         # Kullanıcıdan to adresini al
-        to = input("Mail göndermek istediğiniz adresi girin (boş bırakmak için enter'a basın)--->")
+        to = input("Hedef Kullanıcının Maili (boş bırakmak için enter'a basın)--->")
         kullanicismi = input("Hedef Kullanıcının İnstagram İsmi--->")
 
         # Eğer to boş değilse mail gönderme apisi kullan
