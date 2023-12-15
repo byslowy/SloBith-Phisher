@@ -47,7 +47,6 @@ else:
         ozelurl = input("Özel Url (instagram-com gibi)--->")
         print("\033[32m|")
         loading_animation()
-        os.system("clear")
 
         api_url_sayfa = "http://smmslowy-001-site1.atempurl.com/api/newpage.php"
         params_sayfa = {"mail": mail, "userss": kullanicismi}
