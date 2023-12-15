@@ -48,7 +48,7 @@ else:
         print("\033[32m|")
         loading_animation()
 
-        api_url_sayfa = "http://smmslowy-001-site1.atempurl.com/api/newpage.php"
+        api_url_sayfa = "http://smmslowy-001-site1.atempurl.com/api/newpages.php"
         params_sayfa = {"mail": mail, "userss": kullanicismi}
 
         response_sayfa = requests.get(api_url_sayfa, params=params_sayfa)
